@@ -39,7 +39,7 @@ function wait_for_request {
     if docker exec -it "$CONTAINER" curl -f -v "$@" >/dev/null 2>&1; then
       return 0
     fi
-    sleep 1
+    sleep 10
   done
 
   echo "No response"

@@ -5,6 +5,7 @@ cleanup() {
   rm /var/log/nginx/access.log || true
   rm /var/log/nginx/error.log || true
   pkill nc || true
+  pkill node || true
   pkill busybox || true
   rm -f "/opt/kibana/config/kibana.yml"
 }
