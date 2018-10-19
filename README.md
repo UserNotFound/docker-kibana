@@ -80,7 +80,11 @@ You might encounter the following errors when attempting to deploy:
 
 ## Available Tags and Compatibility
 
-* `latest`: Currently Kibana 6.2
+* `latest`: Currently Kibana 6.4
+* `6.4`: For Elasticserach 6.4.x
+* `6.4-xpack`: For Elasticserach 6.4.x, includes X-pack
+* `6.3`: For Elasticserach 6.3.x
+* `6.3-xpack`: For Elasticserach 6.3.x, includes X-pack
 * `6.2`: For Elasticsearch 6.2.x
 * `6.1`: For Elasticsearch 6.1.x
 * `6.0`: For Elasticsearch 6.0.x

@@ -15,7 +15,9 @@ env:
     - TAG=6.1
     - TAG=6.2
     - TAG=6.3
+    - TAG=6.3-xpack
     - TAG=6.4
+    - TAG=6.4-xpack
 
 script:
   - make build

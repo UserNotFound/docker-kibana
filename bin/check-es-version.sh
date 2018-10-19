@@ -76,7 +76,7 @@ if [[ -z "$KIBANA_NEEDED_VERSION" ]]; then
   exit 1
 fi
 
-if [[ "$TAG" != "$KIBANA_NEEDED_VERSION" ]]; then
+if [[ "${TAG//-xpack/}" != "$KIBANA_NEEDED_VERSION" ]]; then
   echo_with_banner \
     "Incorrect Kibana version detected!" \
     "You are using aptible/kibana:${TAG}, which is not compatible with your version of Elasticsearch." \
