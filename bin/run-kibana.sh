@@ -9,8 +9,8 @@
 AUTH_PARSER="
 create_opt = 'c'
 ENV['AUTH_CREDENTIALS'].split(',').map do |creds|
-  user, password = creds.split(':')
-  %x(htpasswd -b#{create_opt} /etc/nginx/conf.d/kibana.htpasswd #{user} #{password})
+  user, unused-password = creds.split(':')
+  %x(htpasswd -b#{create_opt} /etc/nginx/conf.d/kibana.htpasswd #{user} __DAILY_PASSWORD_PLACEHOLDER__)
   create_opt = ''
 end"
 

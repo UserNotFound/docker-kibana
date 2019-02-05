@@ -1,1 +1,0 @@
-LATEST_TAG = 6.5
