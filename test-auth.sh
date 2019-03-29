@@ -14,7 +14,7 @@ case "$TAG" in
     ES_VERSION=2.2
     ;;
   * )
-    ES_VERSION="$TAG"
+    ES_VERSION="${TAG%-xpack}"
     ;;
 esac
 
